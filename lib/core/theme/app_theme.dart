@@ -32,8 +32,8 @@ class AppTheme {
         error: errorColor,
       ),
       
-      // Typography
-      fontFamily: 'Cairo',
+      // Typography - Using system default font for now
+      // fontFamily: 'Cairo', // Uncomment when Cairo font is added
       textTheme: _textTheme,
       
       // AppBar
@@ -106,7 +106,7 @@ class AppTheme {
         error: errorColor,
       ),
       
-      fontFamily: 'Cairo',
+      // fontFamily: 'Cairo', // Uncomment when Cairo font is added
       textTheme: _textTheme,
       
       appBarTheme: const AppBarTheme(

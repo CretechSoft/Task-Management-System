@@ -113,6 +113,10 @@ Draft → Assigned → In Progress → Submitted for Review → QA Approved / QA
 
 ## Getting Started
 
+### Quick Start
+
+**📖 For detailed setup instructions, see [SETUP_GUIDE.md](SETUP_GUIDE.md)**
+
 ### Prerequisites
 - Flutter SDK (>=3.0.0)
 - Dart SDK
@@ -131,10 +135,12 @@ cd Task-Management-System
 flutter pub get
 ```
 
-3. Generate code (freezed, json_serializable):
+3. **IMPORTANT:** Generate required code files:
 ```bash
 flutter pub run build_runner build --delete-conflicting-outputs
 ```
+
+**Note:** You must run step 3 before running the app. This generates the freezed and JSON serialization files required for the domain entities.
 
 4. Run the app:
 ```bash
@@ -148,13 +154,9 @@ flutter run
 flutter run
 ```
 
-**Generate code:**
+**Generate code (watch mode - auto-regenerates on file changes):**
 ```bash
-# Watch mode
 flutter pub run build_runner watch
-
-# One-time generation
-flutter pub run build_runner build --delete-conflicting-outputs
 ```
 
 **Run tests:**
@@ -281,16 +283,34 @@ The project includes comprehensive testing:
 
 ## Contributing
 
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and development process.
+
+For detailed build instructions, see [BUILD_INSTRUCTIONS.md](BUILD_INSTRUCTIONS.md).
+
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
 4. Run tests and linters
 5. Submit a pull request
 
+## Documentation
+
+- **[SETUP_GUIDE.md](SETUP_GUIDE.md)** - Detailed setup instructions
+- **[BUILD_INSTRUCTIONS.md](BUILD_INSTRUCTIONS.md)** - Comprehensive build guide
+- **[docs/API.md](docs/API.md)** - API documentation
+- **[docs/STATE_MACHINE.md](docs/STATE_MACHINE.md)** - Task workflow documentation
+- **[docs/TESTING.md](docs/TESTING.md)** - Testing guide
+- **[docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)** - Deployment guide
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** - Contribution guidelines
+- **[CHANGELOG.md](CHANGELOG.md)** - Version history
+
 ## License
 
-This project is proprietary software owned by CretechSoft.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Support
 
-For issues, questions, or feature requests, please contact the development team.
+For issues, questions, or feature requests:
+- Check the documentation in the links above
+- Create an issue on GitHub
+- Contact the development team
